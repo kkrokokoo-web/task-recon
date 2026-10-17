@@ -1,0 +1,10 @@
+node_modules
+.tools
+.git
+.env
+dist
+**/dist
+npm-install.log
+*.log
+coverage
+.DS_Store

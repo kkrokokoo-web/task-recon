@@ -1,0 +1,19 @@
+{
+  "name": "recon-takehome",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build -w @recon/shared && npm run build -w @recon/api && npm run build -w @recon/mcp && npm run build -w @recon/web",
+    "test": "npm run test -w @recon/shared",
+    "dev:api": "npm run dev -w @recon/api",
+    "dev:mcp": "npm run dev -w @recon/mcp",
+    "dev:web": "npm run dev -w @recon/web"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
